@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl font-bold text-center mt-12">Welcome to my Baap er Bank</h1>
+  </header>
+
+  <main>
+    <section>
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto p-8">
+            <div class="bg-red-300 p-8 text-white rounded-lg">
+                <h3 class="text-2xl font-semibold my-2">Deposit</h3>
+                <p class="text-3xl font-bold my-2">$<span id="deposit-total">00</span></p>
+            </div>
+            <div class="bg-amber-300 p-8 text-white rounded-lg">
+                <h3 class="text-2xl font-semibold my-2">Withdrawal</h3>
+                <p class="text-3xl font-bold my-2">$<span id="withdraw-total">00</span></p>
+            </div>
+            <div class="bg-emerald-300 p-8 text-white rounded-lg">
+                <h3 class="text-2xl font-semibold my-2">Balance</h3>
+                <p class="text-3xl font-bold my-2">$<span id="balance-total">1500</span></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-4 mx-auto p-8 w-3/4">
+            <div class="bg-cyan-200 rounded-xl p-8">
+                <h3 class="text-2xl font-semibold my-2">Deposit Amount</h3>
+                <input type="number" placeholder="please enter your deposit amount" id="deposit-input" class="w-full py-2 px-4 rounded my-2">
+                <button id="btn-deposit" class="bg-orange-400 my-2 px-4 py-2 text-xl rounded-xl text-white">Deposit</button>
+            </div>
+            <div class="bg-indigo-300 rounded-xl p-8">
+                <h3 class="text-2xl font-semibold my-2">Withdraw Amount</h3>
+                <input type="number" placeholder="please enter your withdraw amount" id="withdraw-input" class="w-full py-2 px-4 rounded my-2">
+                <button id="btn-withdraw" class="bg-orange-400 my-2 px-4 py-2 text-xl rounded-xl text-white">Withdraw</button>
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+  
+  <script src="scripts/utilities.js"></script>
+  <script src="scripts/deposit.js"></script>
+  <script src="scripts/withdraw.js"></script>
+</body>
+</html>
